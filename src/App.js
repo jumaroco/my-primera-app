@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Datos from './components/Datos';
+import Eventos from './components/Eventos';
+import ApiRickAndMorty from './components/ApiRickAndMorty';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+return (
+  <div className='container'>
+    <h1 className="text-warning">React componente App</h1>
+    <h2>Compontente de Datos</h2>
+    {/* <Datos /> */}
+    <h2 className='text-danger'>Compontente de Eventos</h2>
+    {/* <Eventos /> */}
+    <h2 className='text-info'>Compontente ApiRickAndMorty</h2>
+    <ApiRickAndMorty />
+  </div>
+
+);
+
 }
 
 export default App;
